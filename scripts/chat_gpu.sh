@@ -12,9 +12,9 @@ REPO_DIR="$( dirname "$SCRIPT_DIR" )"
 # 自动加载仓库自带的驱动库 (位于 lib 目录)
 export LD_LIBRARY_PATH="$REPO_DIR/lib:$LD_LIBRARY_PATH"
 
-MODEL_PATH="$REPO_DIR/../qwen2.5-1.5b-instruct-q8_0.gguf"
+MODEL_PATH="/home/Hm/qwen2.5-3b-instruct-q4_k_m.gguf"
 # 如果仓库内没有模型，也可以在 scripts 目录下放一个软连接
-[ ! -f "$MODEL_PATH" ] && MODEL_PATH="$REPO_DIR/models/qwen2.5-1.5b-instruct-q8_0.gguf"
+[ ! -f "$MODEL_PATH" ] && MODEL_PATH="/home/Hm/qwen2.5-3b-instruct-q4_k_m.gguf"
 
 BIN_PATH="$REPO_DIR/bin/llama-cli"
 
